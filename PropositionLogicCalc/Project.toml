@@ -1,0 +1,8 @@
+name = "PropositionLogicCalc"
+uuid = "71dd1504-9e13-42c8-b27a-1d18c889e87c"
+authors = ["mudssky <mudssky@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"

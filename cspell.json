@@ -8,12 +8,14 @@
   "words": [
     "antd",
     "Aplayer",
+    "applymap",
     "arrayutil",
     "Artplayer",
     "asticode",
     "astisub",
     "autopct",
     "Baozisoftware",
+    "biconditional",
     "Bilibili",
     "bincount",
     "breadcrumbitem",
@@ -23,6 +25,7 @@
     "Danmaku",
     "danmu",
     "Danmuku",
+    "dataframe",
     "dhowden",
     "dplayer",
     "fileitem",
@@ -35,6 +38,7 @@
     "GOPROXY",
     "goserver",
     "goversion",
+    "logiccalc",
     "loglevel",
     "mudssky",
     "myerror",
@@ -42,6 +46,7 @@
     "newlist",
     "newpath",
     "nplayer",
+    "pyperclip",
     "Qrcode",
     "qrterminal",
     "rawurl",
@@ -60,6 +65,8 @@
     "watchexec",
     "webpermission"
   ],
+  "enabled": true,
+  "allowCompoundWords": true,
   // flagWords - list of words to be always considered incorrect
   // This is useful for offensive words and common spelling errors.
   // For example "hte" should be "the"
