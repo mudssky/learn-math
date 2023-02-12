@@ -14,6 +14,15 @@ requires_python = ">=3.7"
 summary = "asyncio bridge to the standard sqlite3 module"
 
 [[package]]
+name = "algebra-with-sympy"
+version = "0.10.0"
+summary = "Equations that can be algebraicly manipulated."
+dependencies = [
+    "jupyter>=1.0.0",
+    "sympy>=1.10",
+]
+
+[[package]]
 name = "altair"
 version = "4.2.2"
 requires_python = ">=3.7"
@@ -312,6 +321,19 @@ version = "0.2.0"
 summary = "Vestigial utilities from IPython"
 
 [[package]]
+name = "ipywidgets"
+version = "8.0.4"
+requires_python = ">=3.7"
+summary = "Jupyter interactive widgets"
+dependencies = [
+    "ipykernel>=4.5.1",
+    "ipython>=6.1.0",
+    "jupyterlab-widgets~=3.0",
+    "traitlets>=4.3.1",
+    "widgetsnbextension~=4.0",
+]
+
+[[package]]
 name = "isoduration"
 version = "20.11.0"
 requires_python = ">=3.7"
@@ -384,6 +406,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "jupyter"
+version = "1.0.0"
+summary = "Jupyter metapackage. Install all the Jupyter components in one go."
+dependencies = [
+    "ipykernel",
+    "ipywidgets",
+    "jupyter-console",
+    "nbconvert",
+    "notebook",
+    "qtconsole",
+]
+
+[[package]]
 name = "jupyter-client"
 version = "8.0.2"
 requires_python = ">=3.8"
@@ -394,6 +429,22 @@ dependencies = [
     "pyzmq>=23.0",
     "tornado>=6.2",
     "traitlets>=5.3",
+]
+
+[[package]]
+name = "jupyter-console"
+version = "6.5.0"
+requires_python = ">=3.7"
+summary = "Jupyter terminal console"
+dependencies = [
+    "ipykernel>=6.14",
+    "ipython",
+    "jupyter-client>=7.0.0",
+    "jupyter-core!=5.0.*,>=4.12",
+    "prompt-toolkit>=3.0.30",
+    "pygments",
+    "pyzmq>=17",
+    "traitlets>=5.4",
 ]
 
 [[package]]
@@ -524,6 +575,12 @@ dependencies = [
     "packaging>=21.3",
     "requests>=2.28",
 ]
+
+[[package]]
+name = "jupyterlab-widgets"
+version = "3.0.5"
+requires_python = ">=3.7"
+summary = "Jupyter interactive widgets for JupyterLab"
 
 [[package]]
 name = "kiwisolver"
@@ -927,6 +984,31 @@ dependencies = [
 ]
 
 [[package]]
+name = "qtconsole"
+version = "5.4.0"
+requires_python = ">= 3.7"
+summary = "Jupyter Qt console"
+dependencies = [
+    "ipykernel>=4.1",
+    "ipython-genutils",
+    "jupyter-client>=4.1",
+    "jupyter-core",
+    "pygments",
+    "pyzmq>=17.1",
+    "qtpy>=2.0.1",
+    "traitlets!=5.2.1,!=5.2.2",
+]
+
+[[package]]
+name = "qtpy"
+version = "2.3.0"
+requires_python = ">=3.7"
+summary = "Provides an abstraction layer on top of the various Qt bindings (PyQt5/6 and PySide2/6)."
+dependencies = [
+    "packaging",
+]
+
+[[package]]
 name = "requests"
 version = "2.28.2"
 requires_python = ">=3.7, <4"
@@ -1215,6 +1297,12 @@ requires_python = ">=3.7"
 summary = "WebSocket client for Python with low level API options"
 
 [[package]]
+name = "widgetsnbextension"
+version = "4.0.5"
+requires_python = ">=3.7"
+summary = "Jupyter interactive widgets for Jupyter Notebook"
+
+[[package]]
 name = "y-py"
 version = "0.5.5"
 summary = "Python bindings for the Y-CRDT built from yrs (Rust)"
@@ -1238,7 +1326,7 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 
 [metadata]
 lock_version = "4.1"
-content_hash = "sha256:602b17a256025dcf274bfaa3ae2c81ba4fb5d423efb2d6922aee1279b63e7384"
+content_hash = "sha256:0755c777642ef50a34bfe7e4220ea9be5a926127b9080c0175b429acd6e31bf3"
 
 [metadata.files]
 "aiofiles 22.1.0" = [
@@ -1248,6 +1336,10 @@ content_hash = "sha256:602b17a256025dcf274bfaa3ae2c81ba4fb5d423efb2d6922aee1279b
 "aiosqlite 0.18.0" = [
     {url = "https://files.pythonhosted.org/packages/28/b0/2c2766e12cc7ec623294d12f1e544ea50f17403d723a03c671f6c5eadac9/aiosqlite-0.18.0-py3-none-any.whl", hash = "sha256:c3511b841e3a2c5614900ba1d179f366826857586f78abd75e7cbeb88e75a557"},
     {url = "https://files.pythonhosted.org/packages/bd/b1/9c9c5847461c8eed8fa36e72541c53054987993227e1782d4f92e902cbe6/aiosqlite-0.18.0.tar.gz", hash = "sha256:faa843ef5fb08bafe9a9b3859012d3d9d6f77ce3637899de20606b7fc39aa213"},
+]
+"algebra-with-sympy 0.10.0" = [
+    {url = "https://files.pythonhosted.org/packages/0b/22/a857231b716baf4ba83f8a7cef3bb32f3586e820a52eb33243b4acd5a340/Algebra_with_SymPy-0.10.0-py3-none-any.whl", hash = "sha256:d35bcdef0717fe7757859d447e2d208f8146c8a62505ee8f393382cc4c17c3c4"},
+    {url = "https://files.pythonhosted.org/packages/0d/02/3ca78676db4772f822033be5f6789a0ddacf70b29c2f1dbdf26f90c1446d/Algebra_with_SymPy-0.10.0.tar.gz", hash = "sha256:d9f23a87b5e36003e2367b79ea3bf5349a40ee3dcb58099f18e2baed34370b95"},
 ]
 "altair 4.2.2" = [
     {url = "https://files.pythonhosted.org/packages/18/62/47452306e84d4d2e67f9c559380aeb230f5e6ca84fafb428dd36b96a99ba/altair-4.2.2-py3-none-any.whl", hash = "sha256:8b45ebeaf8557f2d760c5c77b79f02ae12aee7c46c27c06014febab6f849bc87"},
@@ -1632,6 +1724,10 @@ content_hash = "sha256:602b17a256025dcf274bfaa3ae2c81ba4fb5d423efb2d6922aee1279b
     {url = "https://files.pythonhosted.org/packages/e8/69/fbeffffc05236398ebfcfb512b6d2511c622871dca1746361006da310399/ipython_genutils-0.2.0.tar.gz", hash = "sha256:eb2e116e75ecef9d4d228fdc66af54269afa26ab4463042e33785b887c628ba8"},
     {url = "https://files.pythonhosted.org/packages/fa/bc/9bd3b5c2b4774d5f33b2d544f1460be9df7df2fe42f352135381c347c69a/ipython_genutils-0.2.0-py2.py3-none-any.whl", hash = "sha256:72dd37233799e619666c9f639a9da83c34013a73e8bbc79a7a6348d93c61fab8"},
 ]
+"ipywidgets 8.0.4" = [
+    {url = "https://files.pythonhosted.org/packages/26/2a/47bf74e71f2c172136e3a101d8a222807ec5cabc10321dfa14f58fda1cbf/ipywidgets-8.0.4.tar.gz", hash = "sha256:c0005a77a47d77889cafed892b58e33b4a2a96712154404c6548ec22272811ea"},
+    {url = "https://files.pythonhosted.org/packages/f3/fc/bd076538811d63babf8ceea0ff3d8d024171569a47f5dba7757c5fd0462c/ipywidgets-8.0.4-py3-none-any.whl", hash = "sha256:ebb195e743b16c3947fe8827190fb87b4d00979c0fbf685afe4d2c4927059fa1"},
+]
 "isoduration 20.11.0" = [
     {url = "https://files.pythonhosted.org/packages/7b/55/e5326141505c5d5e34c5e0935d2908a74e4561eca44108fbfb9c13d2911a/isoduration-20.11.0-py3-none-any.whl", hash = "sha256:b2904c2a4228c3d44f409c8ae8e2370eb21a26f7ac2ec5446df141dde3452042"},
     {url = "https://files.pythonhosted.org/packages/7c/1a/3c8edc664e06e6bd06cce40c6b22da5f1429aa4224d0c590f3be21c91ead/isoduration-20.11.0.tar.gz", hash = "sha256:ac2f9015137935279eac671f94f89eb00584f940f5dc49462a0c4ee692ba1bd9"},
@@ -1660,9 +1756,18 @@ content_hash = "sha256:602b17a256025dcf274bfaa3ae2c81ba4fb5d423efb2d6922aee1279b
     {url = "https://files.pythonhosted.org/packages/36/3d/ca032d5ac064dff543aa13c984737795ac81abc9fb130cd2fcff17cfabc7/jsonschema-4.17.3.tar.gz", hash = "sha256:0f864437ab8b6076ba6707453ef8f98a6a0d512a80e93f8abdb676f737ecb60d"},
     {url = "https://files.pythonhosted.org/packages/c1/97/c698bd9350f307daad79dd740806e1a59becd693bd11443a0f531e3229b3/jsonschema-4.17.3-py3-none-any.whl", hash = "sha256:a870ad254da1a8ca84b6a2905cac29d265f805acc57af304784962a2aa6508f6"},
 ]
+"jupyter 1.0.0" = [
+    {url = "https://files.pythonhosted.org/packages/83/df/0f5dd132200728a86190397e1ea87cd76244e42d39ec5e88efd25b2abd7e/jupyter-1.0.0-py2.py3-none-any.whl", hash = "sha256:5b290f93b98ffbc21c0c7e749f054b3267782166d72fa5e3ed1ed4eaf34a2b78"},
+    {url = "https://files.pythonhosted.org/packages/c9/a9/371d0b8fe37dd231cf4b2cff0a9f0f25e98f3a73c3771742444be27f2944/jupyter-1.0.0.tar.gz", hash = "sha256:d9dc4b3318f310e34c82951ea5d6683f67bed7def4b259fafbfe4f1beb1d8e5f"},
+    {url = "https://files.pythonhosted.org/packages/fc/21/a372b73e3a498b41b92ed915ada7de2ad5e16631546329c03e484c3bf4e9/jupyter-1.0.0.zip", hash = "sha256:3e1f86076bbb7c8c207829390305a2b1fe836d471ed54be66a3b8c41e7f46cc7"},
+]
 "jupyter-client 8.0.2" = [
     {url = "https://files.pythonhosted.org/packages/1f/f6/2b63e6021171dc90517681537358313a58855d3bfbaafc7861d99134f959/jupyter_client-8.0.2-py3-none-any.whl", hash = "sha256:c53731eb590b68839b0ce04bf46ff8c4f03278f5d9fe5c3b0f268a57cc2bd97e"},
     {url = "https://files.pythonhosted.org/packages/d8/41/fddcf62081f88e06be196091beb41c07fe85562199d7439dfd3bf8c57601/jupyter_client-8.0.2.tar.gz", hash = "sha256:47ac9f586dbcff4d79387ec264faf0fdeb5f14845fa7345fd7d1e378f8096011"},
+]
+"jupyter-console 6.5.0" = [
+    {url = "https://files.pythonhosted.org/packages/34/5f/3746b1995e95afff0e3b135d53b9dc38486ee05ebfe3bf61bcb23ba64cfa/jupyter_console-6.5.0.tar.gz", hash = "sha256:67e68f1da16bc3f6f78ed846dd5543ec0679369f8504734f10bfd206faae39ea"},
+    {url = "https://files.pythonhosted.org/packages/da/82/9dd69e46aa15d40349f492228c5cb4135b4ac82dce1eeba0afd8697cedcd/jupyter_console-6.5.0-py3-none-any.whl", hash = "sha256:87826ab6c8c418731fd78f14ec504df735e79554e35784d0a6379018bb3ef9d7"},
 ]
 "jupyter-core 5.2.0" = [
     {url = "https://files.pythonhosted.org/packages/aa/81/f1700beb330c715e3ecf72c6713849f18ed653d49fb2f621705cae2d3b56/jupyter_core-5.2.0.tar.gz", hash = "sha256:1407cdb4c79ee467696c04b76633fc1884015fa109323365a6372c8e890cc83f"},
@@ -1703,6 +1808,10 @@ content_hash = "sha256:602b17a256025dcf274bfaa3ae2c81ba4fb5d423efb2d6922aee1279b
 "jupyterlab-server 2.19.0" = [
     {url = "https://files.pythonhosted.org/packages/bb/d3/a2e98458e1e1d2af2dd6e9204b8be3b93225ab2a644770869f16dfcb3e6d/jupyterlab_server-2.19.0.tar.gz", hash = "sha256:9aec21a2183bbedd9f91a86628355449575f1862d88b28ad5f905019d31e6c21"},
     {url = "https://files.pythonhosted.org/packages/ff/c8/6fd585111c15cd7cb645c0a45e1b56ec8a47b02e95d876d844e24a587f00/jupyterlab_server-2.19.0-py3-none-any.whl", hash = "sha256:51f6922e34f9f3db875051f4f7b57539a04ddd030f42d9ce6062dedf67bf7f2f"},
+]
+"jupyterlab-widgets 3.0.5" = [
+    {url = "https://files.pythonhosted.org/packages/a8/59/1c1a0ae2dc4586c08c372aaee6f5f765327564a753752a8df2574ea1aa31/jupyterlab_widgets-3.0.5.tar.gz", hash = "sha256:eeaecdeaf6c03afc960ddae201ced88d5979b4ca9c3891bcb8f6631af705f5ef"},
+    {url = "https://files.pythonhosted.org/packages/df/82/4576cbc07ebace8c7734fe08b2c2f9123b7ebecd29e932a3b839b6bee2cb/jupyterlab_widgets-3.0.5-py3-none-any.whl", hash = "sha256:a04a42e50231b355b7087e16a818f541e53589f7647144ea0344c4bf16f300e5"},
 ]
 "kiwisolver 1.4.4" = [
     {url = "https://files.pythonhosted.org/packages/03/93/11790e8e81b89acd3a1c8a6b501f8a05b1c41beee0990582699cdda29557/kiwisolver-1.4.4-cp37-cp37m-win_amd64.whl", hash = "sha256:03baab2d6b4a54ddbb43bba1a3a2d1627e82d205c5cf8f4c924dc49284b87166"},
@@ -2382,6 +2491,14 @@ content_hash = "sha256:602b17a256025dcf274bfaa3ae2c81ba4fb5d423efb2d6922aee1279b
     {url = "https://files.pythonhosted.org/packages/fe/32/45d41f2e2316e534c004aea758500e17687afc36ec91e20137d8909538e1/pyzmq-25.0.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:610d2d112acd4e5501fac31010064a6c6efd716ceb968e443cae0059eb7b86de"},
     {url = "https://files.pythonhosted.org/packages/fe/be/a0aa5e60693c0618f15ef8d1a0743ef8431d366b30b5bca41ea14f01391a/pyzmq-25.0.0-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:7877264aa851c19404b1bb9dbe6eed21ea0c13698be1eda3784aab3036d1c861"},
 ]
+"qtconsole 5.4.0" = [
+    {url = "https://files.pythonhosted.org/packages/49/c6/345fffb3f6d8c9607deac4d5ff86e7ad9baf46171267585f5da10b3db890/qtconsole-5.4.0.tar.gz", hash = "sha256:57748ea2fd26320a0b77adba20131cfbb13818c7c96d83fafcb110ff55f58b35"},
+    {url = "https://files.pythonhosted.org/packages/cc/00/4133199dc738e7f497385af86e619f5c29592aaa4c1731fbbc3ec7bb7080/qtconsole-5.4.0-py3-none-any.whl", hash = "sha256:be13560c19bdb3b54ed9741a915aa701a68d424519e8341ac479a91209e694b2"},
+]
+"qtpy 2.3.0" = [
+    {url = "https://files.pythonhosted.org/packages/b0/96/4f3be023cee0261b1f6cd5d2f6c2a5abea8d8022fc66027da8792373a57e/QtPy-2.3.0.tar.gz", hash = "sha256:0603c9c83ccc035a4717a12908bf6bc6cb22509827ea2ec0e94c2da7c9ed57c5"},
+    {url = "https://files.pythonhosted.org/packages/ca/56/3dfbcf8a6808d2b3566b75759c48a281bcdc2b9547760e5d044e6ec7e33b/QtPy-2.3.0-py3-none-any.whl", hash = "sha256:8d6d544fc20facd27360ea189592e6135c614785f0dec0b4f083289de6beb408"},
+]
 "requests 2.28.2" = [
     {url = "https://files.pythonhosted.org/packages/9d/ee/391076f5937f0a8cdf5e53b701ffc91753e87b07d66bae4a09aa671897bf/requests-2.28.2.tar.gz", hash = "sha256:98b1b2782e3c6c4904938b84c0eb932721069dfdb9134313beff7c83c2df24bf"},
     {url = "https://files.pythonhosted.org/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl", hash = "sha256:64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa"},
@@ -2597,6 +2714,10 @@ content_hash = "sha256:602b17a256025dcf274bfaa3ae2c81ba4fb5d423efb2d6922aee1279b
 "websocket-client 1.5.1" = [
     {url = "https://files.pythonhosted.org/packages/6d/9a/6c793729c9d48fcca155ce55e4dfafacffb7fb52a62e3ae2198846c31af6/websocket_client-1.5.1-py3-none-any.whl", hash = "sha256:cdf5877568b7e83aa7cf2244ab56a3213de587bbe0ce9d8b9600fc77b455d89e"},
     {url = "https://files.pythonhosted.org/packages/8b/94/696484b0c13234c91b316bc3d82d432f9b589a9ef09d016875a31c670b76/websocket-client-1.5.1.tar.gz", hash = "sha256:3f09e6d8230892547132177f575a4e3e73cfdf06526e20cc02aa1c3b47184d40"},
+]
+"widgetsnbextension 4.0.5" = [
+    {url = "https://files.pythonhosted.org/packages/46/d0/ef509e5b74d96821b4ec170b7785449e25a89ef0e781e80562e515f84678/widgetsnbextension-4.0.5.tar.gz", hash = "sha256:003f716d930d385be3fd9de42dd9bf008e30053f73bddde235d14fbeaeff19af"},
+    {url = "https://files.pythonhosted.org/packages/c2/1a/73574f7194184c8670b804171d7f43f56c586e5f8142a41f7a53f0998b6b/widgetsnbextension-4.0.5-py3-none-any.whl", hash = "sha256:eaaaf434fb9b08bd197b2a14ffe45ddb5ac3897593d43c69287091e5f3147bf7"},
 ]
 "y-py 0.5.5" = [
     {url = "https://files.pythonhosted.org/packages/02/07/d4ea99426067c2b7a050cb5608e9642fd8f4d323016aab71d24d62954ea3/y_py-0.5.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0edfa91505e3de0276daa44cf1f00a059c0cfc460e3fbb3f5188fefab30358ea"},

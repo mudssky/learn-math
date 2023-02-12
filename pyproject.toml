@@ -24,6 +24,7 @@ dependencies = [
     "tabulate>=0.9.0",
     "pyperclip>=1.8.2",
     "matplotlib-venn>=0.11.7",
+    "Algebra-with-SymPy>=0.10.0",
 ]
 requires-python = ">=3.11"
 license = {text = "MIT"}
