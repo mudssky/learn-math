@@ -4,27 +4,24 @@
 name = ""
 version = ""
 description = ""
-authors = [
-    {name = "mudssky", email = "mudssky@gmail.com"},
-]
+authors = [{ name = "mudssky", email = "mudssky@gmail.com" }]
 dependencies = [
     "sympy>=1.11.1",
-    "numpy>=1.24.1",
+    "numpy>=1.24.2",
     "pandas>=1.5.3",
-    "ipykernel>=6.21.1",
+    "ipykernel>=6.21.2",
     "mpmath>=1.2.1",
     "jupyterlab>=3.6.1",
     "notebook>=6.5.2",
     "matplotlib>=3.6.3",
     "plotly>=5.13.0",
-    "streamlit>=1.17.0",
+    "streamlit>=1.12.0",
     "scipy>=1.9.3",
     "seaborn>=0.12.2",
     "scikit-learn>=1.2.1",
     "tabulate>=0.9.0",
     "pyperclip>=1.8.2",
     "matplotlib-venn>=0.11.7",
-    "Algebra-with-SymPy>=0.10.0",
 ]
-requires-python = ">=3.11"
-license = {text = "MIT"}
+requires-python = ">=3.9"
+license = { text = "MIT" }
