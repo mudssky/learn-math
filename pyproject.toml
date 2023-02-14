@@ -13,16 +13,19 @@ dependencies = [
     "mpmath>=1.2.1",
     "jupyterlab>=3.6.1",
     "notebook>=6.5.2",
-    "matplotlib>=3.6.3",
+    "matplotlib>=3.7.0",
     "plotly>=5.13.0",
     "streamlit>=1.12.0",
-    "scipy>=1.9.3",
+    "scipy>=1.10.0",
     "seaborn>=0.12.2",
     "scikit-learn>=1.2.1",
     "tabulate>=0.9.0",
     "pyperclip>=1.8.2",
     "matplotlib-venn>=0.11.7",
-    "taichi>=0.8.3",
+    "taichi>=1.4.1",
+    "torch>=1.13.1",
+    "torchvision>=0.14.1",
+    "torchaudio>=0.13.1",
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.9,<3.10"
 license = { text = "MIT" }
