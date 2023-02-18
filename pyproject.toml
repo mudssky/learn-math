@@ -27,6 +27,7 @@ dependencies = [
     "torchvision>=0.14.1",
     "torchaudio>=0.13.1",
     "tqdm>=4.64.1",
+    "ipywidgets>=8.0.4",
 ]
 requires-python = ">=3.9,<3.10"
 license = { text = "MIT" }
