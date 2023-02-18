@@ -59,6 +59,7 @@
     "swaggo",
     "sysinfo",
     "tailwindcss",
+    "tqdm",
     "userlist",
     "USERPROFILE",
     "videoplay",
