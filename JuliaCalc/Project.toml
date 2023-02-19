@@ -1,4 +1,4 @@
-name = "PropositionLogicCalc"
+name = "JuliaCalc"
 uuid = "71dd1504-9e13-42c8-b27a-1d18c889e87c"
 authors = ["mudssky <mudssky@gmail.com>"]
 version = "0.1.0"

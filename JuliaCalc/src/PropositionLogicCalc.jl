@@ -1,4 +1,4 @@
-module PropositionLogicCalc
+module JuliaCalc
 
 greet() = print("Hello World!")
 
