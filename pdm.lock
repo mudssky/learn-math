@@ -829,6 +829,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "polars"
+version = "0.16.7"
+requires_python = ">=3.7"
+summary = "Blazingly fast DataFrame library"
+dependencies = [
+    "typing-extensions>=4.0.1; python_version < \"3.11\"",
+]
+
+[[package]]
 name = "prometheus-client"
 version = "0.16.0"
 requires_python = ">=3.6"
@@ -1349,7 +1358,7 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 
 [metadata]
 lock_version = "4.1"
-content_hash = "sha256:ef2caf5a9442f97a45a052a31953ec23fd673dd535f066051ccb03d3b3468db4"
+content_hash = "sha256:e4662b490ea14e76f04f666289e1595457786be43d93e511a97b997c32dbbb23"
 
 [metadata.files]
 "aiofiles 22.1.0" = [
@@ -2239,6 +2248,14 @@ content_hash = "sha256:ef2caf5a9442f97a45a052a31953ec23fd673dd535f066051ccb03d3b
 "plotly 5.13.0" = [
     {url = "https://files.pythonhosted.org/packages/24/49/b814634b778b792c48dbf162435c4be1ae99ca58d397a5cb4ae2088ba2f9/plotly-5.13.0.tar.gz", hash = "sha256:81a3aae4021d5ab91790fc71c3433791f41bfc71586e857f7777f429a955039a"},
     {url = "https://files.pythonhosted.org/packages/39/0e/df1664219b6ca7967ed76afd05fb71a1b9762f8da67e12206625395bd9ff/plotly-5.13.0-py2.py3-none-any.whl", hash = "sha256:4ac5db72176ce144f1fcde8d1ef7bdbccf5bb7a53e3d366b16fcd7c85319fdfd"},
+]
+"polars 0.16.7" = [
+    {url = "https://files.pythonhosted.org/packages/4c/f9/fe937163656b3f4f43383b1c130f47a8abd0ae3be73336e343ba02107480/polars-0.16.7-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:6abdc2a0bf522026f4303612f91e5c3d8af8ee22ae4ff10cf186ceb511a33b4a"},
+    {url = "https://files.pythonhosted.org/packages/55/a0/142e3ada5df85c85bf86ae68e5d716f38f48df2ec35584f1609a5e5ba20d/polars-0.16.7-cp37-abi3-win_amd64.whl", hash = "sha256:3a8410bebc24b2fc0b9c7de7d4a020e6d49434c9f0a09e83adfa952e9dc66c75"},
+    {url = "https://files.pythonhosted.org/packages/67/a3/b8046cd4e610d67be3798030fdcbba8dbb5dd6522458cd9cba4b8ee9754e/polars-0.16.7.tar.gz", hash = "sha256:1a17b104d5b1d0248290ef0fb1e8bfa2fbc9ac0a4298b459d7bff6cb87182a89"},
+    {url = "https://files.pythonhosted.org/packages/6b/38/9db715da2ae17a35fc17e78fe3cd7622a8599606abdbdf72e2003b8902ca/polars-0.16.7-cp37-abi3-macosx_10_7_x86_64.whl", hash = "sha256:89e2d91f4e2425ee95d483e3024b28cf9cbc908887bb821c79c223a696a589e7"},
+    {url = "https://files.pythonhosted.org/packages/92/21/d70d580bbd86f0c1c08f5c5d2f9cd5539522072660ae4a756cc97f9532b2/polars-0.16.7-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:0409e0dab3917bac13509634c273987101a490be94a1d3895d21ff0e149701f2"},
+    {url = "https://files.pythonhosted.org/packages/da/35/6512388e35b416fca5abbeaeb1e2eb33b456fd4a457a15efd466be2a3475/polars-0.16.7-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2106f522dec88ec552a3f981b1ad3bb304c8537152ea62f576c8ea67999d1e83"},
 ]
 "prometheus-client 0.16.0" = [
     {url = "https://files.pythonhosted.org/packages/5b/8e/6a546e439b4366ab9eab0a736876eb1e1916dd93b4a1fa560ef711d24f8c/prometheus_client-0.16.0-py3-none-any.whl", hash = "sha256:0836af6eb2c8f4fed712b2f279f6c0a8bbab29f9f4aa15276b91c7cb0d1616ab"},
