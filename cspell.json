@@ -48,6 +48,7 @@
     "newpath",
     "nplayer",
     "pyperclip",
+    "pyplot",
     "Qrcode",
     "qrterminal",
     "rawurl",
@@ -64,8 +65,11 @@
     "userlist",
     "USERPROFILE",
     "videoplay",
+    "vmax",
     "watchexec",
-    "webpermission"
+    "webpermission",
+    "xlim",
+    "ylim"
   ],
   "enabled": true,
   "allowCompoundWords": true,
